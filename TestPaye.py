@@ -47,7 +47,7 @@ class TestCalculator(unittest.TestCase):
         tax = PAYE.overThan180000(180000)
         self.assertIs(None, tax)
         tax = PAYE.overThan180000(180001)
-        self.assertEqual(50340.39, tax)
+        self.assertEqual(50320.39, tax)
 
 
 if __name__ == '__main__':
